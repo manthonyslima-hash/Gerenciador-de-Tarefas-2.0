@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equip="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ 
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Agendar Tarefas</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="center">Tarefas</h1>
+        <p class="center">Organizando seu dia!!</p>
+
+        <ul class="center">
+            <li>
+                <i class="Small material-icons">event_note</i>
+                Tarefa Importantes!!
+            </li>
+            <li>Não esqueça !!!</li>
+        </ul>
+
+        <p>Titulo: </p><input type="text" class="campoTitulo" />
+        <p>Observações: </p> <input type="text" class="campoObs" />
+
+        <p>Prioridade:</p>
+
+        <select class="campoPrioridade">
+            <option value="Baixa">Baixa</option>
+            <option value="Média">Média</option>
+            <option value="Alta">Alta</option>
+        </select>
+
+        <div class="divBotao">
+            <a id="botao" class="btn-floating btn-large waves-effect waves-light red">
+                <i class="material-icons">arrow_downward</i>
+            </a>
+        </div>
+        <section class="tarefas">
+            <table class="tarefas">
+                <thead>
+                    <tr>
+                        <th>Tarefa</th>
+                        <th>Observações</th>
+                        <th>Prioridade</th>
+                        <th>Status</th>
+                        <th>Apagar</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                </tbody>
+            </table>
+
+        </section>
+
+        <script src="js/jquery-3.5.1.js"></script>
+
+        <!-- JavScript do Materialize -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+         <script src="js/main.js"></script>
+
+    </div>
+</body>
+</html>
